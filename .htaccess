@@ -1,7 +1,5 @@
 RewriteEngine On
 Options -indexes
-RewriteCond %{HTTP_HOST} !^www\.skonseptdanismanlik\.com
-RewriteRule (.*) http://www.skonseptdanismanlik.com/$1 [R=301,L]
 
 RewriteRule ^basindabiz/detay/(.*)-(.*)$ index.php?do=basindabiz&sef=$1&id=$2&detay=1 [QSA,L]
 RewriteRule ^basindabiz/(.*)-(.*)$ index.php?do=basindabiz&sef=$1&id=$2&detay=0 [QSA,L]
